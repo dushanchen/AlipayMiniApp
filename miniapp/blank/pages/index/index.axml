@@ -1,0 +1,12 @@
+<view class="page">
+  <view style='margin:40px;text-align:center'>
+    <image mode="scaleToFill" src="../index.png"/>
+    <view style='margin:40px;text-align:center'>欢迎来到脉塔科技</view>
+  </view>
+ <view style='margin:10px;text-align:center'>
+  <button size="default" type="primary" onTap='to_mine'>我的</button>
+  </view>
+  <view style='margin:10px;text-align:center'>
+  <button size="default" type="primary" onTap='to_pay'>支付</button>
+  </view>
+</view>

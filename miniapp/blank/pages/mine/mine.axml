@@ -1,0 +1,11 @@
+<view style='text-align:center'>
+  <image style='margin:10px' mode="scaleToFill" src="{{userInfo.avatar}}"/>
+  <view style='margin:10px'>昵称: {{userInfo.nickName}}</view>
+  <view style='margin:10px'>城市: {{userInfo.city}}</view>
+  <view style='margin:10px'>省份: {{userInfo.province}}</view>
+  <button  open-type="getAuthorize" a:if="{{show_btn}}"
+  onGetAuthorize="onGetAuthorize" onError="onAuthError" size="default" type="primary" 
+  scope='userInfo'>
+      会员基础信息授权
+  </button>
+</view>
