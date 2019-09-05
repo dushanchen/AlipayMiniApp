@@ -1,6 +1,6 @@
 cd /root/AlipayMiniApp/
 
-git fetch origin
+git fetch origin master
 git merge origin/master
 
 pip3 install -r requirements.txt
@@ -12,5 +12,5 @@ python3 manage.py collectstatic --no-input --settings=aliminiapp.settings_prod
 
 supervisorctl restart aliminiapp
 
-
+service nginx restart
 
