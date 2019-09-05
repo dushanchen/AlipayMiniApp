@@ -23,7 +23,8 @@ Page({
           my.tradePay({
             tradeNO: res.data.trade_no,  
             success: function(res) {
-              my.alert('支付成功, 恭喜你成为脉塔VVIP会员!!')
+              console.info(res)
+              my.alert({title:'支付成功, 恭喜你成为脉塔VVIP会员!!', buttonText:'好滴!'})
             },
             fail: function(res) {
                   console.info(res.resultCode);
